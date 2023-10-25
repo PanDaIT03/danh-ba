@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/hinh_nen"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <EditText
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="#0547AA"
+        android:hint="@string/input_name" />
+
+    <EditText
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:maxLength="11"
+        android:inputType="number"
+        android:id="@+id/edt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Gender:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rbtn_male"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/female"
+                android:textStyle="bold"
+                android:textSize="18sp"  />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:onClick="addContact"
+        android:id="@+id/btn_add_contract"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_8dp"
+        android:text="@string/add_contract"
+        android:textColor="@color/white" />
+
+    <ListView
+        android:id="@+id/lv_contract"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+
+
+

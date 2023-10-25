@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DanhBa</string>
+    <string name="input_name">Input name</string>
+    <string name="input_number">Input number</string>
+    <string name="add_contract">Add Contract</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="g_i">Gọi</string>
+    <string name="tin_nh_n">Tin nhắn</string>
+</resources>
